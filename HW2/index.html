@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學生註冊表單</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>學生註冊表單</h2>
+        <form action="#" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>性別：</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">男性</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">女性</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">其他</label>
+            </div>
+
+            <label for="age">年齡：</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="birthday">生日：</label>
+            <input type="date" id="birthday" name="birthday" required>
+
+            <label for="id_number">身份證號碼：</label>
+            <input type="text" id="id_number" name="id_number" required>
+
+            <label for="school_number">學號：</label>
+            <input type="text" id="school_number" name="school_number" required>
+
+            <label for="class">班級：</label>
+            <select id="class" name="class" required>
+                <option value="year1">一年級</option>
+                <option value="year2">二年級</option>
+                <option value="year3">三年級</option>
+                <option value="year4">四年級</option>
+            </select>
+
+            <label for="phone">聯絡電話：</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="guardian">監護人姓名：</label>
+            <input type="text" id="guardian" name="guardian" required>
+
+            <label for="address">地址：</label>
+            <input type="text" id="address" name="address" required>
+
+            <label>興趣：</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="hobby" value="sports">
+                <label for="sports">運動</label>
+                <input type="checkbox" id="music" name="hobby" value="music">
+                <label for="music">音樂</label>
+                <input type="checkbox" id="reading" name="hobby" value="reading">
+                <label for="reading">閱讀</label>
+                <input type="checkbox" id="gaming" name="hobby" value="gaming">
+                <label for="gaming">遊戲</label>
+            </div>
+
+            <label for="comments">其他備註：</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="請輸入其他資訊..."></textarea>
+
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</body>
+</html>
