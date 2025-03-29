@@ -2,7 +2,6 @@ import { Application } from "https://deno.land/x/oak/mod.ts";
 
 const app = new Application();
 
-// Mark the middleware function as async!
 app.use(async (ctx) => {
   console.log("Request URL:", ctx.request.url);
   let pathname = ctx.request.url.pathname;
